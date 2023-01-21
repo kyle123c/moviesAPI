@@ -9,7 +9,9 @@ import java.util.List;
 @Service
 public class MovieService {
     @Autowired
+    //variable from MovieRepository class that will be used in this class to call the methods
     private MovieRepository movieRepository;
+    //this will return a list of movies
     public List<Movie> allMovies() {
         return movieRepository.findAll();
     }
